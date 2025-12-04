@@ -53,22 +53,23 @@ Complete the exercise in the space below:
 */
 
 const isCharAVowel = (char) => {
-  if (
-    char == "a" ||
-    char == "A" ||
-    char == "e" ||
-    char == "E" ||
-    char == "i" ||
-    char == "I" ||
-    char == "o" ||
-    char == "O" ||
-    char == "u" ||
-    char == "U"
-  ) {
-    return true;
-  } else {
-    return false;
-  }
+  return ["a", "e", "i", "o", "u"].includes(char.toLowerCase());
+  //   if (
+  //     char == "a" ||
+  //     char == "A" ||
+  //     char == "e" ||
+  //     char == "E" ||
+  //     char == "i" ||
+  //     char == "I" ||
+  //     char == "o" ||
+  //     char == "O" ||
+  //     char == "u" ||
+  //     char == "U"
+  //   ) {
+  //     return true;
+  //   } else {
+  //     return false;
+  //   }
 };
 
 console.log("Exercise 3 Result:", isCharAVowel("a"));
